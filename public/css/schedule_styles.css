@@ -1,0 +1,47 @@
+body{
+    color: black;
+}
+
+h1, h2{
+    margin-left: 25%;
+}
+
+select{
+    margin-left: 80%;
+}
+
+table{
+    background-color: #B7B09C;
+    width: 900px;
+    height: 600px;
+    margin-left: 25%;
+    border-collapse: collapse;
+    border-radius: 10px ;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+tr{
+    background-color: #D1CCBD;
+}
+
+td{
+    border-radius: 10px;
+}
+
+
+.IS {
+    margin: 20px;
+    background-color: #8A2B2B;
+}
+
+.computing {
+    margin: 30px;
+    background-color: #002B49;
+}
+
+.PUI {
+    margin: 20px;
+    background-color: #789F90;
+}
