@@ -2,7 +2,7 @@ body{
     color: black;
 }
 
-h1, h2{
+h1, h2, p{
     margin-left: 25%;
 }
 
@@ -15,9 +15,11 @@ select{
     width: 900px;
     height: 600px; 
     margin-left: 25%;
+    border-radius: 10px ;
 }
 
 table{
+    background-color: #B7B09C;
     width: 850px;
     height: 550px;
     margin-left: 25%;

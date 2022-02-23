@@ -11,18 +11,27 @@ h1{
     background-color: #B7B09C;
     border-radius: 10px;
     width: 900px;
-    height: 600px;
+    height: 550px;
     padding: 20px;
 }
 
 .art_requirement{
     border-radius: 10px;
     background-color: #002B49;
-    width: 3%;
+    color: white;
+    width: 20%;
+    position: relative;
+    float: left;
 }
 
 .hci_requirement{
     border-radius: 10px;
     background-color: #789F90;
-    width: 3%;
+    width: 20%;
+    position: relative;
+    float: left;
+}
+
+#course_detail_pg{
+    float:right;
 }
