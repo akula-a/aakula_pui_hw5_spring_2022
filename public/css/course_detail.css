@@ -20,18 +20,22 @@ h1{
     background-color: #002B49;
     color: white;
     width: 20%;
-    position: relative;
     float: left;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 0;
 }
 
 .hci_requirement{
     border-radius: 10px;
     background-color: #789F90;
     width: 20%;
-    position: relative;
     float: left;
+    text-align: center;
+    margin-top: 0;
 }
 
 #course_detail_pg{
     float:right;
+    margin-bottom: 20px;
 }

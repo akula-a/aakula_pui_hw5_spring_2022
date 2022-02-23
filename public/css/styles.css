@@ -8,6 +8,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    top:0px;
+    left:0px;
     width: 20%;
     background-color: #8A2B2B;
     height: 100%; /* Full height */
@@ -43,9 +45,13 @@ li .active {
 /* ----------------------------------------------------- */
 /* ------------ Button styling ----------------- */
 .button {
-    background-color: #002B49;
     color: white;
-    
+    height: 5%;
+    width: 12%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;  
+    background-color: #002B49;
 }
 
 /* ----------------------------------------------------- */
