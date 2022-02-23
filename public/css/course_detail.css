@@ -3,14 +3,14 @@ body{
 }
 
 h1{
-    margin-left:25%;
+    margin-left:20%;
 }
 
 .course_card{
-    margin-left: 25%;
-    background-color: #B7B09C;
+    margin-left: 20%;
+    background-color: #D1CCBD;
     border-radius: 10px;
-    width: 900px;
+    width: 1000px;
     height: 550px;
     padding: 20px;
 }
