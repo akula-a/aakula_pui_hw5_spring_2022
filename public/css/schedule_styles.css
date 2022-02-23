@@ -10,10 +10,16 @@ select{
     margin-left: 80%;
 }
 
-table{
+.schedule_class {
     background-color: #B7B09C;
     width: 900px;
-    height: 600px;
+    height: 600px; 
+    margin-left: 25%;
+}
+
+table{
+    width: 850px;
+    height: 550px;
     margin-left: 25%;
     border-collapse: collapse;
     border-radius: 10px ;

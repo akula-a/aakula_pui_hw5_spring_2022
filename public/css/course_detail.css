@@ -1,0 +1,28 @@
+body{
+    color: black;
+}
+
+h1{
+    margin-left:25%;
+}
+
+.course_card{
+    margin-left: 25%;
+    background-color: #B7B09C;
+    border-radius: 10px;
+    width: 900px;
+    height: 600px;
+    padding: 20px;
+}
+
+.art_requirement{
+    border-radius: 10px;
+    background-color: #002B49;
+    width: 3%;
+}
+
+.hci_requirement{
+    border-radius: 10px;
+    background-color: #789F90;
+    width: 3%;
+}
