@@ -19,9 +19,15 @@ h1{
     margin-bottom: 10px;
 }
 
-.progress_ring p, h2 {
+.progress_ring p {
     text-align: center;
 }
+
+#circle h1{
+    margin-bottom: 25%;
+    margin-right: 15%;
+}
+
 
 /* https://www.w3docs.com/snippets/css/how-to-create-circles-with-css.html */
 #circle {
