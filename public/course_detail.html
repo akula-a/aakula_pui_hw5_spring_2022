@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>CMU SIO</title>
-    <!-- styles -->
+    <!-- links -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/course_detail.css">
+    <script src="main.js"></script>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   </head>
   
-  <body>
+  <body onload= "onLoad()">
     <!-- navigation bar -->
     <nav>
       <ul>
@@ -32,28 +33,26 @@
 
     <!-- course details card -->
     <div class = "course_card"> 
-        <h2> Programming Usable Interfaces </h2>
-        <p> Instructor: Scott Hudson </p>
-        <p> Units: 12 </p>
-        <p> Location: Newell Simon Hall </p>
-        <p> Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <h2 id = "course_name" > </h2>
+        <p id = "instructor" >  </p>
+        <p id = "units"> </p>
+        <p id = "location"> </p>
+        <p id = "description"> </p>
 
         <h3> Requirements Fulfilled </h3>
-            <p class = "art_requirement"> Art & Design </p>
-            <p class = "hci_requirement"> HCI Core Course </p>
+            <p class = "art_requirement" id = "requirement_1">  </p>
+            <p class = "hci_requirement" id = "requirement_2"> </p>
         </br>
         </br>
-        <h3> Semesters Available: Spring 2022, Fall 2023 </h3>
+        <h3 id= "semesters"> Semesters Available: </h3>
+        <p ></p>
         <h3> Sections </h3>
-            <select name=”pui_sections”>
-                <option value= ”A”> A (8:35am - 9:55am) </option>
-                <option value= ”B”> B (10:40am - 12:10pm) </option>
-                <option value= ”C”> C (3:00pm - 4:25pm) </option>
+            <select name= ”sections”>
+                <option id= ”A”> </option>
+                <option id= ”B”> </option>
+                <option id= ”C”> </option>
             </select>
-        <h3> Typical Waitlist: 35 students </h3>
+        <h3 id = "waitlist"> Typical Waitlist</h3>
 
         <p class = "button" id = "course_detail_pg"> Register </p>
         <p class = "button" id = "course_detail_pg"> Read FCEs </p>
