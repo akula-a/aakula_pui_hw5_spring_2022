@@ -11,13 +11,19 @@ function initializeClassList(){
 }
 
 // removes class from current list
-function removeClass(class_name){
+function removeClass(){
+    class_name = localStorage.getItem('class_name')
+    class_list = JSON.parse(localStorage.getItem('class_list'))
     if (class_list.includes(class_name)){
         //fix this
-        class_list.remove(class_name)
+        class_list.replace(class_name, "")
+        alert(class_list.replace(class_name, ""))
+        localStorage.setItem('class_list', JSON.stringify(class_list.replace(class_name, "")))
         alert("You have successfully removed the class")
     }
-    alert("This class is not currently in your schedule.")
+    else{
+        alert("This class is not currently in your schedule.")
+    }
 }
 
 // adds class to current list
