@@ -3,14 +3,28 @@
 
 // students list of classes they are currently taking
 let class_list = ['Programming Usable Interfaces', 'Principles of Computing', 'Python Basics Lab', 'IS Consulting Project']
+localStorage.setItem('class_list', class_list)
 
 // adds class to current list
-function register(class_name){
-    if (class_name in class_list){
-        alert("This class is currently in your schedule.")
-    }
-    class_list.push(class_name)
+function register(){
+    console.log(localStorage.getItem('class_name'))
+    // if (localStorage.getItem('class_list').includes(class_name)){
+    //     alert("This class is currently in your schedule.")
+    // } 
+    // else {
+    //     // figure out local storage for next assignment
+    //     // let class_list = localStorage.getItem('class_list')
+    //     // console.log(Array.from(class_list))
+    //     // localStorage.setItem('class_list', Array.from(class_list).push(class_name))
+    //     // console.log(class_name)
+    //     // console.log(localStorage.getItem('class_list'))
+    //     class_list.push(class_name)
+    //     alert("You have successfully registered!")
+    // }
+    class_list = class_list + (localStorage.getItem('class_name'))
+    console.log(class_list)
     alert("You have successfully registered!")
+    return class_list
 }
 
 // removes class from current list
@@ -110,6 +124,8 @@ function findClass() {
 
 // loading classes based on if the student is currently taking them
 function showRegisteredClasses(){
+    let class_list = register()
+    console.log(class_list)
     if (class_list.includes('Programming Usable Interfaces')){
         console.log(document.getElementsByClassName('PUI'))
         Array.from(document.getElementsByClassName('PUI')).forEach(elem => {
