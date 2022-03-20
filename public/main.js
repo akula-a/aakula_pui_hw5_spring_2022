@@ -5,7 +5,7 @@
 function initializeClassList(){
     if (JSON.parse(localStorage.getItem('class_list')) == null){
         var list = []
-        alert("i am here")
+        // alert("i am here")
         localStorage.setItem('class_list', JSON.stringify(list))
     }
 }
@@ -15,9 +15,7 @@ function removeClass(){
     class_name = localStorage.getItem('class_name')
     class_list = JSON.parse(localStorage.getItem('class_list'))
     if (class_list.includes(class_name)){
-        //fix this
         class_list.replace(class_name, "")
-        alert(class_list.replace(class_name, ""))
         localStorage.setItem('class_list', JSON.stringify(class_list.replace(class_name, "")))
         alert("You have successfully removed the class")
     }
@@ -28,10 +26,9 @@ function removeClass(){
 
 // adds class to current list
 function register(){
-    alert(localStorage.getItem('class_name'))
+    // alert(localStorage.getItem('class_name'))
     class_name = localStorage.getItem('class_name')
     class_list = JSON.parse(localStorage.getItem('class_list'))
-    console.log(class_list)
 
     // checks if already existent class
     if (class_list.includes(class_name)){
@@ -39,7 +36,6 @@ function register(){
     } 
     // else registers for class
     else {
-        alert(JSON.stringify(class_list + [class_name]))
         localStorage.setItem('class_list', JSON.stringify(class_list + [class_name]))
         alert("You have successfully registered!")
     }
@@ -133,7 +129,7 @@ function findClass() {
 // loading classes based on if the student is currently taking them
 function showRegisteredClasses(){
     class_list = JSON.parse(localStorage.getItem('class_list'))
-    alert(JSON.parse(localStorage.getItem('class_list')))
+
     if (class_list.includes('Programming Usable Interfaces')){
         console.log(document.getElementsByClassName('PUI'))
         Array.from(document.getElementsByClassName('PUI')).forEach(elem => {
