@@ -7,7 +7,7 @@ h1, h3 {
 }
 
 .dropdown {
-    position: fixed;
+    position: absolute;
     top: 15%;
     right: 15%;
 }
@@ -29,7 +29,7 @@ table{
     border-spacing: 20px;
     background-color: #D1CCBD;
     width: 1000px;
-    height: 550px;
+    height: 500px;
     color: white;
     font-weight: bolder;
     text-align: center;
@@ -55,6 +55,7 @@ td{
     background-color: #789F90;
 }
 
-a{
+table a{
     color:white;
+    text-decoration: none;
 }

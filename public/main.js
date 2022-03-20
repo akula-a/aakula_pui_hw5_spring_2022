@@ -1,3 +1,32 @@
+// KEEPING TRACK OF CURRENT CLASSES
+/////////////////////////////////
+
+// complete list of classes
+let class_list = ['Programming Usable Interfaces', 'Principles of Computing', 'Python Basics Lab', 'IS Consulting Project']
+
+// adds class to current list
+function register(class_name){
+    if (class_name in class_list){
+        alert("This class is currently in your schedule.")
+    }
+    class_list.push(class_name)
+    alert("You have successfully registered!")
+}
+
+// removes class from current list
+function removeClass(class_name){
+    if (class_name in class_list){
+        //fix this
+        class_list.remove(class_name)
+        alert("You have successfully removed the class")
+    }
+    alert("This class is not currently in your schedule.")
+}
+
+
+// POPULATING COURSE DETAILS PAGE
+/////////////////////////////////
+
 //store information for each class in a dictionary
 var classes = {
     'Programming Usable Interfaces': {
@@ -61,6 +90,7 @@ var classes = {
 // finds the correct class from the course schedule
 function findClass() {
     let class_name = localStorage.getItem('class_name')
+    console.log(class_name)
     let class_dict = classes[class_name]
     return class_dict
 }
