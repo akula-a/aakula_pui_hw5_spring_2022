@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   </head>
   
-  <body onload= "onLoad()">
+  <body onload= "showRegisteredClasses()">
     <script type="text/javascript">
       function saveClassName(elem){
         localStorage.setItem('class_name', elem.innerHTML)
@@ -54,7 +54,7 @@
     <div class = "schedule_table">
         <table>
             <tr>
-                <td class = "PUI" > <a href = "course_detail.html" onclick="saveClassName(this)">Programming Usable Interfaces</a></td> 
+                <td class = "PUI"><a href = "course_detail.html" onclick="saveClassName(this)">Programming Usable Interfaces</a></td> 
                 <td class = "IS"> <a href = "course_detail.html" onclick="saveClassName(this)">IS Consulting Project</a> </td>
                 <td class = "computing"><a href = "course_detail.html" onclick="saveClassName(this)">Python Basics Lab</a></td>
                 <td class = "PUI"><a href = "course_detail.html" onclick="saveClassName(this)">Programming Usable Interfaces</a></td> 
@@ -63,18 +63,18 @@
             
             <tr>
                 <td class = "IS"><a href = "course_detail.html" onclick="saveClassName(this)">IS Consulting Project</a></td>
-                <td> </td>
+                <td class = "ML"><a href = "course_detail.html" onclick="saveClassName(this)">Machine Learning</a> </td>
                 <td class = "PUI"><a href = "course_detail.html" onclick="saveClassName(this)">Programming Usable Interfaces</a></td>
                 <td class = "computing"><a href = "course_detail.html" onclick="saveClassName(this)">Principles of Computing</a></td> 
                 <td>  </td>
             </tr>
 
             <tr>
-                <td></td>
+                <td class = "ML"><a href = "course_detail.html" onclick="saveClassName(this)">Machine Learning</a> </td>
                 <td class = "computing"><a href = "course_detail.html" onclick="saveClassName(this)">Principles of Computing</a></td>
                 <td class = "IS"><a href = "course_detail.html" onclick="saveClassName(this)">IS Consulting Project</a></td>
                 <td class = "computing"><a href = "course_detail.html" onclick="saveClassName(this)">Python Basics Lab</a></td> 
-                <td>  </td>
+                <td class = "ML"><a href = "course_detail.html" onclick="saveClassName(this)">Machine Learning</a> </td>
             </tr>
         </table>
     </div>
