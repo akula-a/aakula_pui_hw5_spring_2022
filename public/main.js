@@ -2,18 +2,22 @@
 /////////////////////////////////
 
 // students list of classes they are currently taking
-function initializeClassList(){
-    if (JSON.parse(localStorage.getItem('class_list')) == null){
-        var list = []
-        // alert("i am here")
-        localStorage.setItem('class_list', JSON.stringify(list))
-    }
-}
+
+const storedVal = JSON.parse(localStorage.getItem('class_list'));
+const class_list = storedVal ? storedVal : [];
+
+// function initializeClassList(){
+//     if (JSON.parse(localStorage.getItem('class_list')) == null){
+//         var list = []
+//         // alert("i am here")
+//         localStorage.setItem('class_list', JSON.stringify(list))
+//     }
+// }
 
 // removes class from current list
 function removeClass(){
     class_name = localStorage.getItem('class_name')
-    class_list = JSON.parse(localStorage.getItem('class_list'))
+    // class_list = JSON.parse(localStorage.getItem('class_list'))
     if (class_list.includes(class_name)){
         class_list.replace(class_name, "")
         localStorage.setItem('class_list', JSON.stringify(class_list.replace(class_name, "")))
@@ -28,7 +32,7 @@ function removeClass(){
 function register(){
     // alert(localStorage.getItem('class_name'))
     class_name = localStorage.getItem('class_name')
-    class_list = JSON.parse(localStorage.getItem('class_list'))
+    // class_list = JSON.parse(localStorage.getItem('class_list'))
 
     // checks if already existent class
     if (class_list.includes(class_name)){
@@ -128,7 +132,7 @@ function findClass() {
 
 // loading classes based on if the student is currently taking them
 function showRegisteredClasses(){
-    class_list = JSON.parse(localStorage.getItem('class_list'))
+    // class_list = JSON.parse(localStorage.getItem('class_list'))
 
     if (class_list.includes('Programming Usable Interfaces')){
         console.log(document.getElementsByClassName('PUI'))
